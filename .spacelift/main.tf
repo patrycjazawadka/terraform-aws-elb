@@ -2,7 +2,7 @@
 # ELB
 ######
 module "elb" {
-  source = "./modules/elb"
+  source = "../modules/elb"
 
   create_elb = var.create_elb
 
@@ -34,7 +34,7 @@ module "elb" {
 # ELB attachment
 #################
 module "elb_attachment" {
-  source = "./modules/elb_attachment"
+  source = "../modules/elb_attachment"
 
   create_attachment = var.create_elb
 
